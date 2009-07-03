@@ -83,7 +83,7 @@
 ===Arguments:===
     * *name*: (String)
         The Popup name to be closed.<br />
-        If not setted, it will close the last Popup opened.
+        If not set, it will close the last Popup opened.
 
 <br /><br /><br />
 
