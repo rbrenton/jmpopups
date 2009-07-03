@@ -64,14 +64,18 @@
         _Default value_: function() {}
 
     * *beforeClose*: (Function)
-        This function will be called before the popups closes.<br />
+        This function will be called before the popup closes.<br />
+        _Default value_: function() {}
+
+    * *afterClose*: (Function)
+        This function will be called after the popup closes.<br />
         _Default value_: function() {}
 
 <br /><br /><br />
 
 
 
-==$.closePopupLayer(`[name[, callback]]`)==
+==$.closePopupLayer(`[name]`)==
 
 ===Description:===
     This method closes a Popup.
@@ -80,9 +84,6 @@
     * *name*: (String)
         The Popup name to be closed.<br />
         If not setted, it will close the last Popup opened.
-
-    * *callback*: (Function)
-        This function will be called after the popups closes.
 
 <br /><br /><br />
 
