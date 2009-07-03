@@ -101,3 +101,4 @@
 
     * *callback*: (Function)
         This function will be called after the popups reloads.
+        It will be executed after the success() method.
