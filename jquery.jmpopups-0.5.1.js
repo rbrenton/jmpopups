@@ -221,7 +221,11 @@
 		var linkAtTop = "<a href='#' class='jmp-link-at-top' style='position:absolute; left:-9999px; top:-1px;'>&nbsp;</a><input class='jmp-link-at-top' style='position:absolute; left:-9999px; top:-1px;' />";
 		var linkAtBottom = "<a href='#' class='jmp-link-at-bottom' style='position:absolute; left:-9999px; bottom:-1px;'>&nbsp;</a><input class='jmp-link-at-bottom' style='position:absolute; left:-9999px; top:-1px;' />";
 
-		popupElement.html(linkAtTop + data + linkAtBottom);
+        try {
+		  popupElement.html(linkAtTop + data + linkAtBottom);
+        } catch (ignore) {
+          // do nothing
+        }
 		
 		setPopupLayersPosition(popupElement);
 
